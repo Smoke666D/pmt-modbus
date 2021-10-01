@@ -1,0 +1,15 @@
+"P:\CAD\IAR\arm\bin\armproc.dll" 
+
+"P:\CAD\IAR\arm\bin\armstlink2.dll" 
+
+"D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\Release\Exe\rs485.out" 
+
+--plugin="P:\CAD\IAR\arm\bin\armbat.dll" 
+
+--device_macro="P:\CAD\IAR\arm\config\debugger\ST\STM32F1xx.dmac" 
+
+--flash_loader="P:\CAD\IAR\arm\config\flashloader\ST\FlashSTM32F10xx8.board" 
+
+
+
+
