@@ -12,17 +12,10 @@
 //#define         TIM1ReloadFreq    240000     // Hz
 
 //**************************PINOUT**********************************************
-#if (device == BKC01)
-  #define         RS485_DE_pin    GPIO_Pin_5
-  #define         RS485_TX_pin    GPIO_Pin_6
-  #define         RS485_RX_pin    GPIO_Pin_7
-  #define         RS485_port      GPIOB
-#else
-  #define         RS485_DE_pin    GPIO_Pin_8
-  #define         RS485_TX_pin    GPIO_Pin_9
-  #define         RS485_RX_pin    GPIO_Pin_10
-  #define         RS485_port      GPIOA
-#endif
+#define         RS485_DE_pin    GPIO_Pin_8
+#define         RS485_TX_pin    GPIO_Pin_9
+#define         RS485_RX_pin    GPIO_Pin_10
+#define         RS485_port      GPIOA
 //***************************MACROS*********************************************
 #define         RS485_nRE       DOUT_RESET(RS485_port,RS485_DE_pin)
 #define         RS485_DE        DOUT_SET(RS485_port,RS485_DE_pin)

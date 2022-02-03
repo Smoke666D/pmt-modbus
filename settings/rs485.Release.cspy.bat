@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"P:\CAD\IAR\common\bin\cspybat" -f "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\settings\rs485.Release.general.xcl" --backend -f "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\settings\rs485.Release.driver.xcl" 
+"P:\CAD\IAR\common\bin\cspybat" -f "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\Device_ModBus\settings\rs485.Release.general.xcl" --backend -f "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\Device_ModBus\settings\rs485.Release.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"P:\CAD\IAR\common\bin\cspybat" -f "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\settings\rs485.Release.general.xcl" "--debug_file=%~1" --backend -f "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\settings\rs485.Release.driver.xcl" 
+"P:\CAD\IAR\common\bin\cspybat" -f "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\Device_ModBus\settings\rs485.Release.general.xcl" "--debug_file=%~1" --backend -f "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\Device_ModBus\settings\rs485.Release.driver.xcl" 
 
 @echo off 
 :end

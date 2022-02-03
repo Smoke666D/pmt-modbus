@@ -179,37 +179,7 @@ void gpio_init(void)
   GPIO_InitStruct.GPIO_Pin   = RS485_RX_pin;            // Настройки вывода 
   GPIO_InitStruct.GPIO_Mode  = GPIO_Mode_IPU;           // GPIO_Mode_IN_FLOATING
   GPIO_Init(RS485_port, &GPIO_InitStruct);              // Заданные настройки сохраняем в регистрах
-  
   DOUT_Init(RS485_DE_pin, RS485_port);
-   
-   
-  RS485_nRE;
-  //GPIO_SetBits(RS485_port, DE_pin);
-  
-  /*
-  //Включаем тактирование GPIOA, USART1 и альтернативных функций AFIO 
-  RCC_APB2PeriphClockCmd((RCC_APB2Periph_USART1 | RCC_APB2Periph_GPIOB | RCC_APB2Periph_AFIO), ENABLE);
-  //Инициализации вывода PA9 6 - USART1_Tx
-  GPIO_InitStruct.GPIO_Pin = GPIO_Pin_6;                        //Настройки вывода PA9
-  GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;                //Скорость порта максимальная
-  GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AF_PP;                  //Режим альтернативной функции, выход Push-Pull
-  GPIO_Init(GPIOB, &GPIO_InitStruct);                           //Заданные настройки сохраняем в регистрах GPIOА
-  //Инициализации вывода PA10 7 - USART1_Rx
-  GPIO_InitStruct.GPIO_Pin = GPIO_Pin_7;                        //Настройки вывода PA10
-  GPIO_InitStruct.GPIO_Mode  = GPIO_Mode_IN_FLOATING;           //Input floating
-  GPIO_Init(GPIOB, &GPIO_InitStruct);                           //Заданные настройки сохраняем в регистрах GPIOА
-  //Инициализации вывода PB5 - RS485_DE
-  GPIO_InitStruct.GPIO_Pin = GPIO_Pin_5;                        //Настройки вывода PB5
-  GPIO_InitStruct.GPIO_Mode = GPIO_Mode_Out_PP;                 //Режим выхода без подтягивающих резисторов
-  GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;                //Скорость порта максимальная
-  GPIO_Init(GPIOB, &GPIO_InitStruct);                           //Заданные настройки сохраняем в регистрах GPIOB  
-  GPIO_SetBits(GPIOB, GPIO_Pin_5);
-  AFIO->MAPR |=  AFIO_MAPR_USART1_REMAP;                        // Задаем альтернативные пины
-  */
-  
-  
-  
-  
   RS485_nRE;
   
   
@@ -234,7 +204,7 @@ void gpio_init(void)
       GPIO_Init(GPIOA, &GPIO_InitStruct);     
       GPIO_InitStruct.GPIO_Pin   = DSW7|DSW6|DSW5|DSW4|DSW3|DSW2|DSW1;            // Настройки вывода
       GPIO_Init(GPIOB, &GPIO_InitStruct);                                         // Заданные настройки сохраняем в регистрах  
-      AFIO->MAPR |= AFIO_MAPR_SWJ_CFG_JTAGDISABLE;                                // Ремапип пины, относящиеся к джетагу
+      //AFIO->MAPR |= AFIO_MAPR_SWJ_CFG_JTAGDISABLE;                                // Ремапип пины, относящиеся к джетагу
     #else
       GPIO_InitStruct.GPIO_Pin   = DSW4|DSW3|DSW2|DSW1;
       GPIO_InitStruct.GPIO_Mode  = GPIO_Mode_IPD;

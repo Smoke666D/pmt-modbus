@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "P:\CAD\IAR\common\bin\cspybat" -f "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\settings\rs485.Release.general.xcl" --backend -f "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\settings\rs485.Release.driver.xcl" 
+& "P:\CAD\IAR\common\bin\cspybat" -f "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\Device_ModBus\settings\rs485.Release.general.xcl" --backend -f "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\Device_ModBus\settings\rs485.Release.driver.xcl" 
 }
 else
 {
-& "P:\CAD\IAR\common\bin\cspybat" -f "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\settings\rs485.Release.general.xcl" --debug_file=$debugfile --backend -f "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\settings\rs485.Release.driver.xcl" 
+& "P:\CAD\IAR\common\bin\cspybat" -f "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\Device_ModBus\settings\rs485.Release.general.xcl" --debug_file=$debugfile --backend -f "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\Device_ModBus\settings\rs485.Release.driver.xcl" 
 }

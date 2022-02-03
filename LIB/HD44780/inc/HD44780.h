@@ -9,7 +9,7 @@
 #define         SWTimout                2               // 
 #define         LedBright               50              // %
 
-#define         HD_BUFFER_SIZE	        0x30
+#define         HD_BUFFER_SIZE	        0x32
 #define         HD_BUFFER_DATA_MSK      0x00FF
 #define         HD_BUFFER_RS_MSK        0x0100
 

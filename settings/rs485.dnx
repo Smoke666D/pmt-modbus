@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <settings>
     <DebugChecksum>
-        <Checksum>1953131904</Checksum>
+        <Checksum>1987321160</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -64,7 +64,7 @@
     </Disassemble_mode>
     <array_types>
         <Fmt0>uint16_t[10]	4	0</Fmt0>
-        <Fmt1>uint16_t[20]	4	0</Fmt1>
+        <Fmt1>uint16_t[20]	3	0</Fmt1>
         <Fmt2>uint16_t[3]	4	0</Fmt2>
         <Fmt3>uint16_t[47]	4	0</Fmt3>
         <Fmt4>uint16_t[6]	4	0</Fmt4>
@@ -164,13 +164,21 @@
         <mode>0</mode>
     </DisassembleMode>
     <Breakpoints2>
-        <Count>0</Count>
+        <Bp0>_ 1 "EMUL_CODE" "{$PROJ_DIR$\LIB\ModBus\src\register.c}.224.3" 0 0 1 "" 0 "" 0</Bp0>
+        <Bp1>_ 0 "EMUL_CODE" "{$PROJ_DIR$\LIB\ModBus\src\register.c}.60.3" 0 0 1 "" 0 "" 0</Bp1>
+        <Bp2>_ 1 "EMUL_CODE" "{$PROJ_DIR$\DEVICES\src\BKC01.c}.515.13" 0 0 1 "" 0 "" 0</Bp2>
+        <Bp3>_ 0 "EMUL_CODE" "{$PROJ_DIR$\LIB\HD44780\src\HD44780.c}.327.3" 0 0 1 "" 0 "" 0</Bp3>
+        <Count>4</Count>
     </Breakpoints2>
     <Aliases>
-        <A0>_ "F:\SOFTWARE\Device_ModBus\DEVICES\src\BIG.C" ""</A0>
-        <A1>_ "F:\SOFTWARE\Device_ModBus\LIB\I2C\src\I2C.c" ""</A1>
-        <A2>_ "F:\SOFTWARE\Device_ModBus\main.c" ""</A2>
-        <Count>3</Count>
-        <SuppressDialog>0</SuppressDialog>
+        <A0>_ "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\DEVICES\src\BIG.C" ""</A0>
+        <A1>_ "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\LIB\I2C\src\I2C.c" ""</A1>
+        <A2>_ "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\LIB\SPI\src\SPI.c" ""</A2>
+        <A3>_ "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\main.c" ""</A3>
+        <A4>_ "F:\SOFTWARE\Device_ModBus\DEVICES\src\BIG.C" ""</A4>
+        <A5>_ "F:\SOFTWARE\Device_ModBus\LIB\I2C\src\I2C.c" ""</A5>
+        <A6>_ "F:\SOFTWARE\Device_ModBus\main.c" ""</A6>
+        <Count>7</Count>
+        <SuppressDialog>1</SuppressDialog>
     </Aliases>
 </settings>

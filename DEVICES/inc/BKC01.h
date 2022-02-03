@@ -13,7 +13,7 @@ void BKC01_FSA(void);           // Конечный автомат
 #define         KL2_pin         GPIO_Pin_14
 #define         KL2_port        GPIOB
 
-#define         KL3_pin         GPIO_Pin_8
+#define         KL3_pin         GPIO_Pin_11
 #define         KL3_port        GPIOA
 
 #define         KL4_pin         GPIO_Pin_13
@@ -57,6 +57,7 @@ void BKC01_FSA(void);           // Конечный автомат
 #define         SysRegBlinkStat         0x0100          // Флаг состояния мигания
 //******************************Device******************************************
 // TIM4 - 10000 hz => 0.1 ms
+#define         BKC_TIMEOUT             100
 #define         ZUMMER_freq             50
 #define         KeyDownTimout           40      // 40 ms Таймаут нажатия кнопки для отсекания дребезг контактов
 #define         KeyHoldTimeout          5000    // 500 ms Таймаут удержания кнопки для нового функцианала

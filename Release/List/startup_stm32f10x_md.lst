@@ -1,390 +1,455 @@
 ###############################################################################
 #                                                                             #
-#     IAR Assembler V7.50.2.10312/W32 for ARM 09/Jul/2018  11:21:57           #
-#     Copyright 1999-2015 IAR Systems AB.                                     #
+#     IAR Assembler V8.30.1.114/W32 for ARM 04/Oct/2021  13:18:45             #
+#     Copyright 1999-2018 IAR Systems AB.                                     #
 #                                                                             #
-#           Source file   =  F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s#
-#           List file     =  F:\SOFTWARE\Device_ModBus\Release\List\startup_stm32f10x_md.lst#
-#           Object file   =  F:\SOFTWARE\Device_ModBus\Release\Obj\startup_stm32f10x_md.o#
-#           Command line  =  F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s #
-#                            -OF:\SOFTWARE\Device_ModBus\Release\Obj -s+      #
-#                            -M<> -w+                                         #
-#                            -LF:\SOFTWARE\Device_ModBus\Release\List -t8     #
-#                            --cpu Cortex-M3 --fpu None                       #
+#           Source file   =  D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s#
+#           List file     =  D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\Device_ModBus\Release\List\startup_stm32f10x_md.lst#
+#           Object file   =  D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\Device_ModBus\Release\Obj\startup_stm32f10x_md.o#
+#           Command line  =  -f                                               #
+#                            C:\Users\PHOTO_~1\AppData\Local\Temp\EWB2BF.tmp  #
+#                            (D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s #
+#                            -OD:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\Device_ModBus\Release\Obj #
+#                            -s+ -M<> -w+                                     #
+#                            -LD:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_ModBus\Device_ModBus\Release\List #
+#                            -t8 --cpu Cortex-M3 --fpu None)                  #
 #                                                                             #
 ###############################################################################
 
                                 Reset_Handler
                                 ------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",124  Warning[25]: L
-                                abel 'Reset_Handler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",124  Warning[25]: Label
+                        'Reset_Handler' is defined pubweak in a section
+                        implicitly declared root
                                 NMI_Handler
                                 ----------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",132  Warning[25]: L
-                                abel 'NMI_Handler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",132  Warning[25]: Label
+                        'NMI_Handler' is defined pubweak in a section
+                        implicitly declared root
                                 HardFault_Handler
                                 ----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",137  Warning[25]: L
-                                abel 'HardFault_Handler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",137  Warning[25]: Label
+                        'HardFault_Handler' is defined pubweak in a section
+                        implicitly declared root
                                 MemManage_Handler
                                 ----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",142  Warning[25]: L
-                                abel 'MemManage_Handler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",142  Warning[25]: Label
+                        'MemManage_Handler' is defined pubweak in a section
+                        implicitly declared root
                                 BusFault_Handler
                                 ---------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",147  Warning[25]: L
-                                abel 'BusFault_Handler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",147  Warning[25]: Label
+                        'BusFault_Handler' is defined pubweak in a section
+                        implicitly declared root
                                 UsageFault_Handler
                                 -----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",152  Warning[25]: L
-                                abel 'UsageFault_Handler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",152  Warning[25]: Label
+                        'UsageFault_Handler' is defined pubweak in a section
+                        implicitly declared root
                                 SVC_Handler
                                 ----------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",157  Warning[25]: L
-                                abel 'SVC_Handler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",157  Warning[25]: Label
+                        'SVC_Handler' is defined pubweak in a section
+                        implicitly declared root
                                 DebugMon_Handler
                                 ---------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",162  Warning[25]: L
-                                abel 'DebugMon_Handler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",162  Warning[25]: Label
+                        'DebugMon_Handler' is defined pubweak in a section
+                        implicitly declared root
                                 PendSV_Handler
                                 -------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",167  Warning[25]: L
-                                abel 'PendSV_Handler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",167  Warning[25]: Label
+                        'PendSV_Handler' is defined pubweak in a section
+                        implicitly declared root
                                 SysTick_Handler
                                 --------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",172  Warning[25]: L
-                                abel 'SysTick_Handler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",172  Warning[25]: Label
+                        'SysTick_Handler' is defined pubweak in a section
+                        implicitly declared root
                                 WWDG_IRQHandler
                                 --------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",177  Warning[25]: L
-                                abel 'WWDG_IRQHandler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",177  Warning[25]: Label
+                        'WWDG_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 PVD_IRQHandler
                                 -------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",182  Warning[25]: L
-                                abel 'PVD_IRQHandler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",182  Warning[25]: Label
+                        'PVD_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 TAMPER_IRQHandler
                                 ----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",187  Warning[25]: L
-                                abel 'TAMPER_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",187  Warning[25]: Label
+                        'TAMPER_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 RTC_IRQHandler
                                 -------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",192  Warning[25]: L
-                                abel 'RTC_IRQHandler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",192  Warning[25]: Label
+                        'RTC_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 FLASH_IRQHandler
                                 ---------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",197  Warning[25]: L
-                                abel 'FLASH_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",197  Warning[25]: Label
+                        'FLASH_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 RCC_IRQHandler
                                 -------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",202  Warning[25]: L
-                                abel 'RCC_IRQHandler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",202  Warning[25]: Label
+                        'RCC_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 EXTI0_IRQHandler
                                 ---------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",207  Warning[25]: L
-                                abel 'EXTI0_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",207  Warning[25]: Label
+                        'EXTI0_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 EXTI1_IRQHandler
                                 ---------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",212  Warning[25]: L
-                                abel 'EXTI1_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",212  Warning[25]: Label
+                        'EXTI1_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 EXTI2_IRQHandler
                                 ---------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",217  Warning[25]: L
-                                abel 'EXTI2_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",217  Warning[25]: Label
+                        'EXTI2_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 EXTI3_IRQHandler
                                 ---------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",222  Warning[25]: L
-                                abel 'EXTI3_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",222  Warning[25]: Label
+                        'EXTI3_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 EXTI4_IRQHandler
                                 ---------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",227  Warning[25]: L
-                                abel 'EXTI4_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",227  Warning[25]: Label
+                        'EXTI4_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 DMA1_Channel1_IRQHandler
                                 -----------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",232  Warning[25]: L
-                                abel 'DMA1_Channel1_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",232  Warning[25]: Label
+                        'DMA1_Channel1_IRQHandler' is defined pubweak in a
+                        section implicitly declared ro
+                                ot
                                 DMA1_Channel2_IRQHandler
                                 -----------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",237  Warning[25]: L
-                                abel 'DMA1_Channel2_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",237  Warning[25]: Label
+                        'DMA1_Channel2_IRQHandler' is defined pubweak in a
+                        section implicitly declared ro
+                                ot
                                 DMA1_Channel3_IRQHandler
                                 -----------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",242  Warning[25]: L
-                                abel 'DMA1_Channel3_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",242  Warning[25]: Label
+                        'DMA1_Channel3_IRQHandler' is defined pubweak in a
+                        section implicitly declared ro
+                                ot
                                 DMA1_Channel4_IRQHandler
                                 -----------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",247  Warning[25]: L
-                                abel 'DMA1_Channel4_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",247  Warning[25]: Label
+                        'DMA1_Channel4_IRQHandler' is defined pubweak in a
+                        section implicitly declared ro
+                                ot
                                 DMA1_Channel5_IRQHandler
                                 -----------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",252  Warning[25]: L
-                                abel 'DMA1_Channel5_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",252  Warning[25]: Label
+                        'DMA1_Channel5_IRQHandler' is defined pubweak in a
+                        section implicitly declared ro
+                                ot
                                 DMA1_Channel6_IRQHandler
                                 -----------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",257  Warning[25]: L
-                                abel 'DMA1_Channel6_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",257  Warning[25]: Label
+                        'DMA1_Channel6_IRQHandler' is defined pubweak in a
+                        section implicitly declared ro
+                                ot
                                 DMA1_Channel7_IRQHandler
                                 -----------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",262  Warning[25]: L
-                                abel 'DMA1_Channel7_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",262  Warning[25]: Label
+                        'DMA1_Channel7_IRQHandler' is defined pubweak in a
+                        section implicitly declared ro
+                                ot
                                 ADC1_2_IRQHandler
                                 ----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",267  Warning[25]: L
-                                abel 'ADC1_2_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",267  Warning[25]: Label
+                        'ADC1_2_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 USB_HP_CAN1_TX_IRQHandler
                                 ------------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",272  Warning[25]: L
-                                abel 'USB_HP_CAN1_TX_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",272  Warning[25]: Label
+                        'USB_HP_CAN1_TX_IRQHandler' is defined pubweak in a
+                        section implicitly declared r
+                                oot
                                 USB_LP_CAN1_RX0_IRQHandler
                                 -------------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",277  Warning[25]: L
-                                abel 'USB_LP_CAN1_RX0_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",277  Warning[25]: Label
+                        'USB_LP_CAN1_RX0_IRQHandler' is defined pubweak in a
+                        section implicitly declared 
+                                root
                                 CAN1_RX1_IRQHandler
                                 ------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",282  Warning[25]: L
-                                abel 'CAN1_RX1_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",282  Warning[25]: Label
+                        'CAN1_RX1_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 CAN1_SCE_IRQHandler
                                 ------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",287  Warning[25]: L
-                                abel 'CAN1_SCE_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",287  Warning[25]: Label
+                        'CAN1_SCE_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 EXTI9_5_IRQHandler
                                 -----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",292  Warning[25]: L
-                                abel 'EXTI9_5_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",292  Warning[25]: Label
+                        'EXTI9_5_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 TIM1_BRK_IRQHandler
                                 ------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",297  Warning[25]: L
-                                abel 'TIM1_BRK_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",297  Warning[25]: Label
+                        'TIM1_BRK_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 TIM1_UP_IRQHandler
                                 -----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",302  Warning[25]: L
-                                abel 'TIM1_UP_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",302  Warning[25]: Label
+                        'TIM1_UP_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 TIM1_TRG_COM_IRQHandler
                                 ----------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",307  Warning[25]: L
-                                abel 'TIM1_TRG_COM_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",307  Warning[25]: Label
+                        'TIM1_TRG_COM_IRQHandler' is defined pubweak in a
+                        section implicitly declared roo
+                                t
                                 TIM1_CC_IRQHandler
                                 -----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",312  Warning[25]: L
-                                abel 'TIM1_CC_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",312  Warning[25]: Label
+                        'TIM1_CC_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 TIM2_IRQHandler
                                 --------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",317  Warning[25]: L
-                                abel 'TIM2_IRQHandler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",317  Warning[25]: Label
+                        'TIM2_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 TIM3_IRQHandler
                                 --------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",322  Warning[25]: L
-                                abel 'TIM3_IRQHandler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",322  Warning[25]: Label
+                        'TIM3_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 TIM4_IRQHandler
                                 --------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",327  Warning[25]: L
-                                abel 'TIM4_IRQHandler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",327  Warning[25]: Label
+                        'TIM4_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 I2C1_EV_IRQHandler
                                 -----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",332  Warning[25]: L
-                                abel 'I2C1_EV_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",332  Warning[25]: Label
+                        'I2C1_EV_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 I2C1_ER_IRQHandler
                                 -----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",337  Warning[25]: L
-                                abel 'I2C1_ER_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",337  Warning[25]: Label
+                        'I2C1_ER_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 I2C2_EV_IRQHandler
                                 -----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",342  Warning[25]: L
-                                abel 'I2C2_EV_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",342  Warning[25]: Label
+                        'I2C2_EV_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 I2C2_ER_IRQHandler
                                 -----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",347  Warning[25]: L
-                                abel 'I2C2_ER_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",347  Warning[25]: Label
+                        'I2C2_ER_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 SPI1_IRQHandler
                                 --------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",352  Warning[25]: L
-                                abel 'SPI1_IRQHandler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",352  Warning[25]: Label
+                        'SPI1_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 SPI2_IRQHandler
                                 --------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",357  Warning[25]: L
-                                abel 'SPI2_IRQHandler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",357  Warning[25]: Label
+                        'SPI2_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 USART1_IRQHandler
                                 ----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",362  Warning[25]: L
-                                abel 'USART1_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",362  Warning[25]: Label
+                        'USART1_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 USART2_IRQHandler
                                 ----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",367  Warning[25]: L
-                                abel 'USART2_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",367  Warning[25]: Label
+                        'USART2_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 USART3_IRQHandler
                                 ----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",372  Warning[25]: L
-                                abel 'USART3_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",372  Warning[25]: Label
+                        'USART3_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 EXTI15_10_IRQHandler
                                 -------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",377  Warning[25]: L
-                                abel 'EXTI15_10_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",377  Warning[25]: Label
+                        'EXTI15_10_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 RTCAlarm_IRQHandler
                                 ------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",382  Warning[25]: L
-                                abel 'RTCAlarm_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",382  Warning[25]: Label
+                        'RTCAlarm_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
                                 USBWakeUp_IRQHandler
                                 -------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",387  Warning[25]: L
-                                abel 'USBWakeUp_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",387  Warning[25]: Label
+                        'USBWakeUp_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
 
 
     1                           ;******************** (C) COPYRIGHT 2011
@@ -597,11 +662,12 @@
   124                           Reset_Handler
                                 Reset_Handler
                                 ------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",124  Warning[25]: L
-                                abel 'Reset_Handler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",124  Warning[25]: Label
+                        'Reset_Handler' is defined pubweak in a section
+                        implicitly declared root
   125    00000000 0148                  LDR     R0, =SystemInit
   126    00000002 8047                  BLX     R0
   127    00000004 0148                  LDR     R0, =__iar_program_start
@@ -615,11 +681,12 @@
   132                           NMI_Handler
                                 NMI_Handler
                                 ----------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",132  Warning[25]: L
-                                abel 'NMI_Handler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",132  Warning[25]: Label
+                        'NMI_Handler' is defined pubweak in a section
+                        implicitly declared root
   133    00000000 ........              B NMI_Handler
   134                           
   135                                   PUBWEAK HardFault_Handler
@@ -627,11 +694,12 @@
   137                           HardFault_Handler
                                 HardFault_Handler
                                 ----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",137  Warning[25]: L
-                                abel 'HardFault_Handler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",137  Warning[25]: Label
+                        'HardFault_Handler' is defined pubweak in a section
+                        implicitly declared root
   138    00000000 ........              B HardFault_Handler
   139                           
   140                                   PUBWEAK MemManage_Handler
@@ -639,11 +707,12 @@
   142                           MemManage_Handler
                                 MemManage_Handler
                                 ----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",142  Warning[25]: L
-                                abel 'MemManage_Handler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",142  Warning[25]: Label
+                        'MemManage_Handler' is defined pubweak in a section
+                        implicitly declared root
   143    00000000 ........              B MemManage_Handler
   144                           
   145                                   PUBWEAK BusFault_Handler
@@ -651,11 +720,12 @@
   147                           BusFault_Handler
                                 BusFault_Handler
                                 ---------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",147  Warning[25]: L
-                                abel 'BusFault_Handler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",147  Warning[25]: Label
+                        'BusFault_Handler' is defined pubweak in a section
+                        implicitly declared root
   148    00000000 ........              B BusFault_Handler
   149                           
   150                                   PUBWEAK UsageFault_Handler
@@ -663,11 +733,12 @@
   152                           UsageFault_Handler
                                 UsageFault_Handler
                                 -----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",152  Warning[25]: L
-                                abel 'UsageFault_Handler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",152  Warning[25]: Label
+                        'UsageFault_Handler' is defined pubweak in a section
+                        implicitly declared root
   153    00000000 ........              B UsageFault_Handler
   154                           
   155                                   PUBWEAK SVC_Handler
@@ -675,11 +746,12 @@
   157                           SVC_Handler
                                 SVC_Handler
                                 ----------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",157  Warning[25]: L
-                                abel 'SVC_Handler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",157  Warning[25]: Label
+                        'SVC_Handler' is defined pubweak in a section
+                        implicitly declared root
   158    00000000 ........              B SVC_Handler
   159                           
   160                                   PUBWEAK DebugMon_Handler
@@ -687,11 +759,12 @@
   162                           DebugMon_Handler
                                 DebugMon_Handler
                                 ---------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",162  Warning[25]: L
-                                abel 'DebugMon_Handler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",162  Warning[25]: Label
+                        'DebugMon_Handler' is defined pubweak in a section
+                        implicitly declared root
   163    00000000 ........              B DebugMon_Handler
   164                           
   165                                   PUBWEAK PendSV_Handler
@@ -699,11 +772,12 @@
   167                           PendSV_Handler
                                 PendSV_Handler
                                 -------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",167  Warning[25]: L
-                                abel 'PendSV_Handler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",167  Warning[25]: Label
+                        'PendSV_Handler' is defined pubweak in a section
+                        implicitly declared root
   168    00000000 ........              B PendSV_Handler
   169                           
   170                                   PUBWEAK SysTick_Handler
@@ -711,11 +785,12 @@
   172                           SysTick_Handler
                                 SysTick_Handler
                                 --------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",172  Warning[25]: L
-                                abel 'SysTick_Handler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",172  Warning[25]: Label
+                        'SysTick_Handler' is defined pubweak in a section
+                        implicitly declared root
   173    00000000 ........              B SysTick_Handler
   174                           
   175                                   PUBWEAK WWDG_IRQHandler
@@ -723,11 +798,12 @@
   177                           WWDG_IRQHandler
                                 WWDG_IRQHandler
                                 --------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",177  Warning[25]: L
-                                abel 'WWDG_IRQHandler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",177  Warning[25]: Label
+                        'WWDG_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   178    00000000 ........              B WWDG_IRQHandler
   179                           
   180                                   PUBWEAK PVD_IRQHandler
@@ -735,11 +811,12 @@
   182                           PVD_IRQHandler
                                 PVD_IRQHandler
                                 -------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",182  Warning[25]: L
-                                abel 'PVD_IRQHandler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",182  Warning[25]: Label
+                        'PVD_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   183    00000000 ........              B PVD_IRQHandler
   184                           
   185                                   PUBWEAK TAMPER_IRQHandler
@@ -747,11 +824,12 @@
   187                           TAMPER_IRQHandler
                                 TAMPER_IRQHandler
                                 ----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",187  Warning[25]: L
-                                abel 'TAMPER_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",187  Warning[25]: Label
+                        'TAMPER_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   188    00000000 ........              B TAMPER_IRQHandler
   189                           
   190                                   PUBWEAK RTC_IRQHandler
@@ -759,11 +837,12 @@
   192                           RTC_IRQHandler
                                 RTC_IRQHandler
                                 -------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",192  Warning[25]: L
-                                abel 'RTC_IRQHandler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",192  Warning[25]: Label
+                        'RTC_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   193    00000000 ........              B RTC_IRQHandler
   194                           
   195                                   PUBWEAK FLASH_IRQHandler
@@ -771,11 +850,12 @@
   197                           FLASH_IRQHandler
                                 FLASH_IRQHandler
                                 ---------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",197  Warning[25]: L
-                                abel 'FLASH_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",197  Warning[25]: Label
+                        'FLASH_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   198    00000000 ........              B FLASH_IRQHandler
   199                           
   200                                   PUBWEAK RCC_IRQHandler
@@ -783,11 +863,12 @@
   202                           RCC_IRQHandler
                                 RCC_IRQHandler
                                 -------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",202  Warning[25]: L
-                                abel 'RCC_IRQHandler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",202  Warning[25]: Label
+                        'RCC_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   203    00000000 ........              B RCC_IRQHandler
   204                           
   205                                   PUBWEAK EXTI0_IRQHandler
@@ -795,11 +876,12 @@
   207                           EXTI0_IRQHandler
                                 EXTI0_IRQHandler
                                 ---------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",207  Warning[25]: L
-                                abel 'EXTI0_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",207  Warning[25]: Label
+                        'EXTI0_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   208    00000000 ........              B EXTI0_IRQHandler
   209                           
   210                                   PUBWEAK EXTI1_IRQHandler
@@ -807,11 +889,12 @@
   212                           EXTI1_IRQHandler
                                 EXTI1_IRQHandler
                                 ---------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",212  Warning[25]: L
-                                abel 'EXTI1_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",212  Warning[25]: Label
+                        'EXTI1_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   213    00000000 ........              B EXTI1_IRQHandler
   214                           
   215                                   PUBWEAK EXTI2_IRQHandler
@@ -819,11 +902,12 @@
   217                           EXTI2_IRQHandler
                                 EXTI2_IRQHandler
                                 ---------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",217  Warning[25]: L
-                                abel 'EXTI2_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",217  Warning[25]: Label
+                        'EXTI2_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   218    00000000 ........              B EXTI2_IRQHandler
   219                           
   220                                   PUBWEAK EXTI3_IRQHandler
@@ -831,11 +915,12 @@
   222                           EXTI3_IRQHandler
                                 EXTI3_IRQHandler
                                 ---------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",222  Warning[25]: L
-                                abel 'EXTI3_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",222  Warning[25]: Label
+                        'EXTI3_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   223    00000000 ........              B EXTI3_IRQHandler
   224                           
   225                                   PUBWEAK EXTI4_IRQHandler
@@ -843,11 +928,12 @@
   227                           EXTI4_IRQHandler
                                 EXTI4_IRQHandler
                                 ---------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",227  Warning[25]: L
-                                abel 'EXTI4_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",227  Warning[25]: Label
+                        'EXTI4_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   228    00000000 ........              B EXTI4_IRQHandler
   229                           
   230                                   PUBWEAK DMA1_Channel1_IRQHandler
@@ -855,11 +941,13 @@
   232                           DMA1_Channel1_IRQHandler
                                 DMA1_Channel1_IRQHandler
                                 -----------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",232  Warning[25]: L
-                                abel 'DMA1_Channel1_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",232  Warning[25]: Label
+                        'DMA1_Channel1_IRQHandler' is defined pubweak in a
+                        section implicitly declared ro
+                                ot
   233    00000000 ........              B DMA1_Channel1_IRQHandler
   234                           
   235                                   PUBWEAK DMA1_Channel2_IRQHandler
@@ -867,11 +955,13 @@
   237                           DMA1_Channel2_IRQHandler
                                 DMA1_Channel2_IRQHandler
                                 -----------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",237  Warning[25]: L
-                                abel 'DMA1_Channel2_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",237  Warning[25]: Label
+                        'DMA1_Channel2_IRQHandler' is defined pubweak in a
+                        section implicitly declared ro
+                                ot
   238    00000000 ........              B DMA1_Channel2_IRQHandler
   239                           
   240                                   PUBWEAK DMA1_Channel3_IRQHandler
@@ -879,11 +969,13 @@
   242                           DMA1_Channel3_IRQHandler
                                 DMA1_Channel3_IRQHandler
                                 -----------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",242  Warning[25]: L
-                                abel 'DMA1_Channel3_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",242  Warning[25]: Label
+                        'DMA1_Channel3_IRQHandler' is defined pubweak in a
+                        section implicitly declared ro
+                                ot
   243    00000000 ........              B DMA1_Channel3_IRQHandler
   244                           
   245                                   PUBWEAK DMA1_Channel4_IRQHandler
@@ -891,11 +983,13 @@
   247                           DMA1_Channel4_IRQHandler
                                 DMA1_Channel4_IRQHandler
                                 -----------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",247  Warning[25]: L
-                                abel 'DMA1_Channel4_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",247  Warning[25]: Label
+                        'DMA1_Channel4_IRQHandler' is defined pubweak in a
+                        section implicitly declared ro
+                                ot
   248    00000000 ........              B DMA1_Channel4_IRQHandler
   249                           
   250                                   PUBWEAK DMA1_Channel5_IRQHandler
@@ -903,11 +997,13 @@
   252                           DMA1_Channel5_IRQHandler
                                 DMA1_Channel5_IRQHandler
                                 -----------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",252  Warning[25]: L
-                                abel 'DMA1_Channel5_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",252  Warning[25]: Label
+                        'DMA1_Channel5_IRQHandler' is defined pubweak in a
+                        section implicitly declared ro
+                                ot
   253    00000000 ........              B DMA1_Channel5_IRQHandler
   254                           
   255                                   PUBWEAK DMA1_Channel6_IRQHandler
@@ -915,11 +1011,13 @@
   257                           DMA1_Channel6_IRQHandler
                                 DMA1_Channel6_IRQHandler
                                 -----------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",257  Warning[25]: L
-                                abel 'DMA1_Channel6_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",257  Warning[25]: Label
+                        'DMA1_Channel6_IRQHandler' is defined pubweak in a
+                        section implicitly declared ro
+                                ot
   258    00000000 ........              B DMA1_Channel6_IRQHandler
   259                           
   260                                   PUBWEAK DMA1_Channel7_IRQHandler
@@ -927,11 +1025,13 @@
   262                           DMA1_Channel7_IRQHandler
                                 DMA1_Channel7_IRQHandler
                                 -----------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",262  Warning[25]: L
-                                abel 'DMA1_Channel7_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",262  Warning[25]: Label
+                        'DMA1_Channel7_IRQHandler' is defined pubweak in a
+                        section implicitly declared ro
+                                ot
   263    00000000 ........              B DMA1_Channel7_IRQHandler
   264                           
   265                                   PUBWEAK ADC1_2_IRQHandler
@@ -939,11 +1039,12 @@
   267                           ADC1_2_IRQHandler
                                 ADC1_2_IRQHandler
                                 ----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",267  Warning[25]: L
-                                abel 'ADC1_2_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",267  Warning[25]: Label
+                        'ADC1_2_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   268    00000000 ........              B ADC1_2_IRQHandler
   269                           
   270                                   PUBWEAK USB_HP_CAN1_TX_IRQHandler
@@ -951,11 +1052,13 @@
   272                           USB_HP_CAN1_TX_IRQHandler
                                 USB_HP_CAN1_TX_IRQHandler
                                 ------------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",272  Warning[25]: L
-                                abel 'USB_HP_CAN1_TX_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",272  Warning[25]: Label
+                        'USB_HP_CAN1_TX_IRQHandler' is defined pubweak in a
+                        section implicitly declared r
+                                oot
   273    00000000 ........              B USB_HP_CAN1_TX_IRQHandler
   274                           
   275                                   PUBWEAK USB_LP_CAN1_RX0_IRQHandler
@@ -963,11 +1066,13 @@
   277                           USB_LP_CAN1_RX0_IRQHandler
                                 USB_LP_CAN1_RX0_IRQHandler
                                 -------------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",277  Warning[25]: L
-                                abel 'USB_LP_CAN1_RX0_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",277  Warning[25]: Label
+                        'USB_LP_CAN1_RX0_IRQHandler' is defined pubweak in a
+                        section implicitly declared 
+                                root
   278    00000000 ........              B USB_LP_CAN1_RX0_IRQHandler
   279                           
   280                                   PUBWEAK CAN1_RX1_IRQHandler
@@ -975,11 +1080,12 @@
   282                           CAN1_RX1_IRQHandler
                                 CAN1_RX1_IRQHandler
                                 ------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",282  Warning[25]: L
-                                abel 'CAN1_RX1_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",282  Warning[25]: Label
+                        'CAN1_RX1_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   283    00000000 ........              B CAN1_RX1_IRQHandler
   284                           
   285                                   PUBWEAK CAN1_SCE_IRQHandler
@@ -987,11 +1093,12 @@
   287                           CAN1_SCE_IRQHandler
                                 CAN1_SCE_IRQHandler
                                 ------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",287  Warning[25]: L
-                                abel 'CAN1_SCE_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",287  Warning[25]: Label
+                        'CAN1_SCE_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   288    00000000 ........              B CAN1_SCE_IRQHandler
   289                           
   290                                   PUBWEAK EXTI9_5_IRQHandler
@@ -999,11 +1106,12 @@
   292                           EXTI9_5_IRQHandler
                                 EXTI9_5_IRQHandler
                                 -----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",292  Warning[25]: L
-                                abel 'EXTI9_5_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",292  Warning[25]: Label
+                        'EXTI9_5_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   293    00000000 ........              B EXTI9_5_IRQHandler
   294                           
   295                                   PUBWEAK TIM1_BRK_IRQHandler
@@ -1011,11 +1119,12 @@
   297                           TIM1_BRK_IRQHandler
                                 TIM1_BRK_IRQHandler
                                 ------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",297  Warning[25]: L
-                                abel 'TIM1_BRK_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",297  Warning[25]: Label
+                        'TIM1_BRK_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   298    00000000 ........              B TIM1_BRK_IRQHandler
   299                           
   300                                   PUBWEAK TIM1_UP_IRQHandler
@@ -1023,11 +1132,12 @@
   302                           TIM1_UP_IRQHandler
                                 TIM1_UP_IRQHandler
                                 -----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",302  Warning[25]: L
-                                abel 'TIM1_UP_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",302  Warning[25]: Label
+                        'TIM1_UP_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   303    00000000 ........              B TIM1_UP_IRQHandler
   304                           
   305                                   PUBWEAK TIM1_TRG_COM_IRQHandler
@@ -1035,11 +1145,13 @@
   307                           TIM1_TRG_COM_IRQHandler
                                 TIM1_TRG_COM_IRQHandler
                                 ----------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",307  Warning[25]: L
-                                abel 'TIM1_TRG_COM_IRQHandler' is defined
-                        pubweak in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",307  Warning[25]: Label
+                        'TIM1_TRG_COM_IRQHandler' is defined pubweak in a
+                        section implicitly declared roo
+                                t
   308    00000000 ........              B TIM1_TRG_COM_IRQHandler
   309                           
   310                                   PUBWEAK TIM1_CC_IRQHandler
@@ -1047,11 +1159,12 @@
   312                           TIM1_CC_IRQHandler
                                 TIM1_CC_IRQHandler
                                 -----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",312  Warning[25]: L
-                                abel 'TIM1_CC_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",312  Warning[25]: Label
+                        'TIM1_CC_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   313    00000000 ........              B TIM1_CC_IRQHandler
   314                           
   315                                   PUBWEAK TIM2_IRQHandler
@@ -1059,11 +1172,12 @@
   317                           TIM2_IRQHandler
                                 TIM2_IRQHandler
                                 --------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",317  Warning[25]: L
-                                abel 'TIM2_IRQHandler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",317  Warning[25]: Label
+                        'TIM2_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   318    00000000 ........              B TIM2_IRQHandler
   319                           
   320                                   PUBWEAK TIM3_IRQHandler
@@ -1071,11 +1185,12 @@
   322                           TIM3_IRQHandler
                                 TIM3_IRQHandler
                                 --------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",322  Warning[25]: L
-                                abel 'TIM3_IRQHandler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",322  Warning[25]: Label
+                        'TIM3_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   323    00000000 ........              B TIM3_IRQHandler
   324                           
   325                                   PUBWEAK TIM4_IRQHandler
@@ -1083,11 +1198,12 @@
   327                           TIM4_IRQHandler
                                 TIM4_IRQHandler
                                 --------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",327  Warning[25]: L
-                                abel 'TIM4_IRQHandler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",327  Warning[25]: Label
+                        'TIM4_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   328    00000000 ........              B TIM4_IRQHandler
   329                           
   330                                   PUBWEAK I2C1_EV_IRQHandler
@@ -1095,11 +1211,12 @@
   332                           I2C1_EV_IRQHandler
                                 I2C1_EV_IRQHandler
                                 -----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",332  Warning[25]: L
-                                abel 'I2C1_EV_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",332  Warning[25]: Label
+                        'I2C1_EV_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   333    00000000 ........              B I2C1_EV_IRQHandler
   334                           
   335                                   PUBWEAK I2C1_ER_IRQHandler
@@ -1107,11 +1224,12 @@
   337                           I2C1_ER_IRQHandler
                                 I2C1_ER_IRQHandler
                                 -----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",337  Warning[25]: L
-                                abel 'I2C1_ER_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",337  Warning[25]: Label
+                        'I2C1_ER_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   338    00000000 ........              B I2C1_ER_IRQHandler
   339                           
   340                                   PUBWEAK I2C2_EV_IRQHandler
@@ -1119,11 +1237,12 @@
   342                           I2C2_EV_IRQHandler
                                 I2C2_EV_IRQHandler
                                 -----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",342  Warning[25]: L
-                                abel 'I2C2_EV_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",342  Warning[25]: Label
+                        'I2C2_EV_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   343    00000000 ........              B I2C2_EV_IRQHandler
   344                           
   345                                   PUBWEAK I2C2_ER_IRQHandler
@@ -1131,11 +1250,12 @@
   347                           I2C2_ER_IRQHandler
                                 I2C2_ER_IRQHandler
                                 -----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",347  Warning[25]: L
-                                abel 'I2C2_ER_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",347  Warning[25]: Label
+                        'I2C2_ER_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   348    00000000 ........              B I2C2_ER_IRQHandler
   349                           
   350                                   PUBWEAK SPI1_IRQHandler
@@ -1143,11 +1263,12 @@
   352                           SPI1_IRQHandler
                                 SPI1_IRQHandler
                                 --------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",352  Warning[25]: L
-                                abel 'SPI1_IRQHandler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",352  Warning[25]: Label
+                        'SPI1_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   353    00000000 ........              B SPI1_IRQHandler
   354                           
   355                                   PUBWEAK SPI2_IRQHandler
@@ -1155,11 +1276,12 @@
   357                           SPI2_IRQHandler
                                 SPI2_IRQHandler
                                 --------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",357  Warning[25]: L
-                                abel 'SPI2_IRQHandler' is defined pubweak in a
-                        section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",357  Warning[25]: Label
+                        'SPI2_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   358    00000000 ........              B SPI2_IRQHandler
   359                           
   360                                   PUBWEAK USART1_IRQHandler
@@ -1167,11 +1289,12 @@
   362                           USART1_IRQHandler
                                 USART1_IRQHandler
                                 ----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",362  Warning[25]: L
-                                abel 'USART1_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",362  Warning[25]: Label
+                        'USART1_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   363    00000000 ........              B USART1_IRQHandler
   364                           
   365                                   PUBWEAK USART2_IRQHandler
@@ -1179,11 +1302,12 @@
   367                           USART2_IRQHandler
                                 USART2_IRQHandler
                                 ----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",367  Warning[25]: L
-                                abel 'USART2_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",367  Warning[25]: Label
+                        'USART2_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   368    00000000 ........              B USART2_IRQHandler
   369                           
   370                                   PUBWEAK USART3_IRQHandler
@@ -1191,11 +1315,12 @@
   372                           USART3_IRQHandler
                                 USART3_IRQHandler
                                 ----------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",372  Warning[25]: L
-                                abel 'USART3_IRQHandler' is defined pubweak in
-                        a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",372  Warning[25]: Label
+                        'USART3_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   373    00000000 ........              B USART3_IRQHandler
   374                           
   375                                   PUBWEAK EXTI15_10_IRQHandler
@@ -1203,11 +1328,12 @@
   377                           EXTI15_10_IRQHandler
                                 EXTI15_10_IRQHandler
                                 -------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",377  Warning[25]: L
-                                abel 'EXTI15_10_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",377  Warning[25]: Label
+                        'EXTI15_10_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   378    00000000 ........              B EXTI15_10_IRQHandler
   379                           
   380                                   PUBWEAK RTCAlarm_IRQHandler
@@ -1215,11 +1341,12 @@
   382                           RTCAlarm_IRQHandler
                                 RTCAlarm_IRQHandler
                                 ------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",382  Warning[25]: L
-                                abel 'RTCAlarm_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",382  Warning[25]: Label
+                        'RTCAlarm_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   383    00000000 ........              B RTCAlarm_IRQHandler
   384                           
   385                                   PUBWEAK USBWakeUp_IRQHandler
@@ -1227,11 +1354,12 @@
   387                           USBWakeUp_IRQHandler
                                 USBWakeUp_IRQHandler
                                 -------------------^
-                                "F:\SOFTWARE\Device_ModBus\LIB\CMSIS\CM3\Devic
-                       eSupport\ST\STM32F10x\startup\iar\startup_stm32f10x_md.s
-                       ",387  Warning[25]: L
-                                abel 'USBWakeUp_IRQHandler' is defined pubweak
-                        in a section implicitly declared root
+                                "D:\PROJECTS\ТАР ПМТ\SOFTWARE\Device_Mod
+                       Bus\Device_ModBus\LIB\CMSIS\CM3\DeviceSupport\ST\STM32F1
+                       0x\startup\iar\startu
+                                p_stm32f10x_md.s",387  Warning[25]: Label
+                        'USBWakeUp_IRQHandler' is defined pubweak in a section
+                        implicitly declared root
   388    00000000 ........              B USBWakeUp_IRQHandler
   389                           
   390                                   END

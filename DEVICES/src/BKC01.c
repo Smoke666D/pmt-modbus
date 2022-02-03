@@ -263,12 +263,14 @@ void BKC01_FunInit(void)
   HD_init();                                            // Инициализируем дисплей
   SetPointPos = ReadHolding(SetPointAdr);               // Читаем номер уставки из памяти
   PWM_tim->CCR1   = ReadHolding(LCD_ContrastAdr);       // Меням контраст экрана
-  //PWM_tim->CCR1 = (PWM_tim->CNT)*(ReadHolding(LCD_ContrastAdr) & 0xF)/0xF;
-  //LED_Br        = (PWM_tim->CNT)*(ReadHolding(LCD_BrightAdr)   & 0xF)/0xF;
+  PWM_tim->CCR1 = (PWM_tim->CNT)*(ReadHolding(LCD_ContrastAdr) & 0xF)/0xF;
+  LED_Br        = (PWM_tim->CNT)*(ReadHolding(LCD_BrightAdr)   & 0xF)/0xF;
   SetPointPosTemp = SetPointPos;
+  ResetHoldingModifyFlag(); 
   SPtr = SetPointVal[SetPointPos];                      // Инициализирекм уставку
   SPtrTemp = SPtr;
   HD_Send_Float(SPtr);                                  // Выводим на дисплей сохраненную уставку
+  return;
 }
 
 
@@ -290,12 +292,16 @@ void BKC01_FSA(void)
   
   if (GetHoldingModifyFlag())
   {
-    SetPointPos     = ReadHolding(SetPointAdr);         // Читаем уставку из памяти
-    SetPointPosTemp = SetPointPos;                      // Затираем изменение уставки
-    SPtr            = SetPointVal[SetPointPos];         // Вычисляем значение уставки
-    SPtrTemp        = SPtr;                             // Затираем изменение уставки
-    HD_Send_Float(SPtr);                                // Выводим на дисплей сохраненную уставку
-    
+    if ( SumUpSetPointNom > ReadHolding(SetPointAdr) ) 
+    {
+      SetPointPos     = ReadHolding(SetPointAdr);         // Читаем уставку из памяти
+      SetPointPosTemp = SetPointPos;                      // Затираем изменение уставки
+      SPtr            = SetPointVal[SetPointPos];         // Вычисляем значение уставки
+      SPtrTemp        = SPtr;                             // Затираем изменение уставки
+      HD_Send_Float(SPtr);                                // Выводим на дисплей сохраненную уставку
+    } else {
+      WriteHolding( SetPointAdr, ( uint8_t* )SetPointPos, 1 );
+    }
     PWM_tim->CCR1   = ReadHolding(LCD_ContrastAdr);     // Меням контраст экрана
     LED_Br          = ReadHolding(LCD_BrightAdr);       // Меняем яркость экрана
     
@@ -317,11 +323,13 @@ void BKC01_FSA(void)
         LastEvent = SwTrg;                      // Записываем новое событие
         SysReg   |= SysRegSwDone;               // Выставляем флажок нового события
       }
-      if (((LastEvent&SW_msk) == 0x0F)&&((SwTrg&SW_msk) != 0)&&((SwTrg&SW_msk != 0x0F)))
+      if ( ( ( LastEvent & SW_msk ) == 0x0F ) &&
+           ( ( SwTrg     & SW_msk ) != 0    ) &&
+           ( ( SwTrg     & SW_msk ) != 0x0F ) )
       {
         SwTrg = 0x0A;
       }
-      switch(SwTrg)                                     // Обработка кнопки
+      switch( SwTrg )                                     // Обработка кнопки
       {
         case 0x00:                                      // Обработка кнопки не закончена
           break;

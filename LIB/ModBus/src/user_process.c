@@ -41,8 +41,9 @@
 //******************************************************************************
 //*******************************GLOBAL VAR*************************************
 //******************************************************************************
-static UCHAR   CurrentSlaveAdrees = 0x01;
-static uint8_t SW_COUNT = 0;
+static UCHAR    CurrentSlaveAdrees = 0x01;
+static uint8_t  SW_COUNT           = 0;
+static uint32_t delayCounter       = 0U;
 //******************************************************************************
 //*******************************FUNCTIONS**************************************
 //******************************************************************************
@@ -53,7 +54,7 @@ void TIM2_IRQHandler(void);
 //******************************************************************************
 uint8_t GetSwitsh(void)
 {
-  uint32_t temp = 0,mask,data;
+  uint32_t temp = 0,mask,data, temp1;
   
   #if ( DSW_ENB > 0 )
     #if ( DSW_SHORT == 0 )
@@ -73,6 +74,7 @@ uint8_t GetSwitsh(void)
       {  
         if (temp & (0x80>>i)) temp1 |= 0x01<<i;
         if (temp & (0x01<<i)) temp1 |= 0x80>>i;
+        temp = temp1;
       }
     #else
       temp = ( ( ( ~GPIOB->IDR ) & ( DSW4 | DSW3 | DSW2 | DSW1 ) ) >> 3 );
@@ -134,7 +136,15 @@ void TIM2_IRQHandler(void)
     #endif  
       
     #if (device == BKC01)
-      BKC01_FSA();
+      if ( delayCounter < BKC_TIMEOUT ) 
+      {
+        delayCounter++;
+      }
+      else
+      {
+        BKC01_FSA();
+        delayCounter = 0U;
+      }
     #endif
     
     __enable_irq (); 
