@@ -4,3 +4,8 @@
 *.pbi
 *.cout
 *.xcl
+*.sim
+*.wsdt
+Release
+Debug
+settings
