@@ -185,18 +185,6 @@ void Led(uint8_t OnOff)
   return;
 }
 //******************************************************************************
-void vFloat2Uint16 ( const float* input, uint16_t* data )
-{
-  data = ( uint16_t* )( input );
-  return;
-}
-//******************************************************************************
-void vUint16ToFloat ( const uint16_t* input, float* output )
-{
-  output = ( float* )( input );
-  return;
-}
-//******************************************************************************
 uint32_t uFloat2pos ( float input )
 {
   uint32_t res = 0U;
@@ -226,18 +214,18 @@ uint32_t uReadSetPoint ( void )
 {
   uint16_t buf[2U] = { 0U };
   float    temp    = 0.0f;
-  buf[0U] = ReadHolding(SetPoint0Adr);
-  buf[1U] = ReadHolding(SetPoint1Adr);
-  vUint16ToFloat( buf, &temp );
+  buf[0U] = ReadHolding(SetPoint1Adr);
+  buf[1U] = ReadHolding(SetPoint0Adr);
+  temp = *( float* )( buf );
   return uFloat2pos( temp );
 }
 //******************************************************************************
 void vWriteSetPoint ( float* data )
 {
   uint16_t buf[2U] = { 0U };
-  vFloat2Uint16( data, buf );
-  WriteShortToHolding( SetPoint0Adr, buf[0U] );
-  WriteShortToHolding( SetPoint1Adr, buf[1U] );
+  *( float* )buf = *data;
+  WriteShortToHolding( SetPoint1Adr, buf[0U] );
+  WriteShortToHolding( SetPoint0Adr, buf[1U] );
   return;
 }
 //******************************************************************************
@@ -314,14 +302,13 @@ void BKC01_Init(void)
   return;
 }
 
-void BKC01_FunInit(void)
+void BKC01_FunInit (void)
 {
-  
   HD_init();                                            // Инициализируем дисплей
-  SetPointPos = uReadSetPoint();               // Читаем номер уставки из памяти
-  PWM_tim->CCR1   = ReadHolding(LCD_ContrastAdr);       // Меням контраст экрана
-  PWM_tim->CCR1 = (PWM_tim->CNT)*(ReadHolding(LCD_ContrastAdr) & 0xF)/0xF;
-  LED_Br        = (PWM_tim->CNT)*(ReadHolding(LCD_BrightAdr)   & 0xF)/0xF;
+  SetPointPos     = uReadSetPoint();                    // Читаем номер уставки из памяти
+  //PWM_tim->CCR1   = ReadHolding(LCD_ContrastAdr);       // Меням контраст экрана
+  PWM_tim->CCR1   = (PWM_tim->CNT)*(ReadHolding(LCD_ContrastAdr) & 0xF)/0xF;
+  LED_Br          = (PWM_tim->CNT)*(ReadHolding(LCD_BrightAdr)   & 0xF)/0xF;
   SetPointPosTemp = SetPointPos;
   ResetHoldingModifyFlag(); 
   SPtr = SetPointVal[SetPointPos];                      // Инициализирекм уставку
@@ -349,14 +336,16 @@ void BKC01_FSA(void)
   
   if (GetHoldingModifyFlag())
   {
-    SetPointPos = uReadSetPoint();
+    SetPointPos     = uReadSetPoint();
     SetPointPosTemp = SetPointPos;                      // Затираем изменение уставки
     SPtr            = SetPointVal[SetPointPos];         // Вычисляем значение уставки
     SPtrTemp        = SPtr;                             // Затираем изменение уставки
     HD_Send_Float(SPtr);                                // Выводим на дисплей сохраненную уставку
     vWriteSetPoint( &SPtr );
-    PWM_tim->CCR1   = ReadHolding(LCD_ContrastAdr);     // Меням контраст экрана
-    LED_Br          = ReadHolding(LCD_BrightAdr);       // Меняем яркость экрана
+    //PWM_tim->CCR1   = ReadHolding(LCD_ContrastAdr);     // Меням контраст экрана
+    //LED_Br          = ReadHolding(LCD_BrightAdr);       // Меняем яркость экрана
+    PWM_tim->CCR1   = (PWM_tim->CNT)*(ReadHolding(LCD_ContrastAdr) & 0xF)/0xF;
+    LED_Br          = (PWM_tim->CNT)*(ReadHolding(LCD_BrightAdr)   & 0xF)/0xF;
     
     ResetHoldingModifyFlag();                           // Сбрасываем флаг приема новых данных
   }

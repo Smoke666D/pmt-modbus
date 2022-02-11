@@ -15,7 +15,7 @@ UCHAR GetCurSlaveAdr(void);
 #define         KMG18           0x09
 #define         BKC01           0x0A
 
-#define         device          BIC
+#define         device          BKC01
 //******************************************************************************
 #if (device == 0)
 
@@ -83,8 +83,8 @@ UCHAR GetCurSlaveAdr(void);
 #if (device == BKC01)
 
 #define         HOLDING_REGISTER_RAM_COUNT      2
-#define         HOLDING_REGISTER_ROM_COUNT      1
-#define         REGISTER_DEFAULT_VAL            {0, 0, 0}
+#define         HOLDING_REGISTER_ROM_COUNT      2
+#define         REGISTER_DEFAULT_VAL            {0, 0, 0, 0xFFFF}
 
 #endif
 //******************************************************************************
