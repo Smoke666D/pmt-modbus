@@ -89,9 +89,12 @@ void BKC01_FSA(void);           // Конечный автомат
 
 
 //*******************************ROM********************************************
-#define         SetPointAdr             0x00
-#define         LCD_ContrastAdr         0x01
-#define         LCD_BrightAdr           0x02
+#define         SetPoint0Adr            0x00
+#define         SetPoint1Adr            0x01
+#define         LCD_ContrastAdr         0x02
+#define         LCD_BrightAdr           0x03
+#define         memory0Adr              0x04
+#define         memory1Adr              0x05
 //******************************************************************************
 //******************************************************************************
 //******************************************************************************

@@ -9,3 +9,11 @@
 Release
 Debug
 settings
+
+*.browse
+
+*.pbd
+
+*.linf
+
+*.pbw
